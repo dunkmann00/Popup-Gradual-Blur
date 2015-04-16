@@ -14,6 +14,7 @@
 		052730A41ADF446100C84F69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052730A31ADF446100C84F69 /* Images.xcassets */; };
 		052730A71ADF446100C84F69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052730A51ADF446100C84F69 /* LaunchScreen.xib */; };
 		052730B31ADF446100C84F69 /* Popup_Gradual_BlurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 052730B21ADF446100C84F69 /* Popup_Gradual_BlurTests.m */; };
+		052730BE1ADF44CF00C84F69 /* GWPopupBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052730BD1ADF44CF00C84F69 /* GWPopupBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		052730AC1ADF446100C84F69 /* Popup Gradual BlurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Popup Gradual BlurTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		052730B11ADF446100C84F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		052730B21ADF446100C84F69 /* Popup_Gradual_BlurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Popup_Gradual_BlurTests.m; sourceTree = "<group>"; };
+		052730BC1ADF44CF00C84F69 /* GWPopupBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWPopupBlurView.h; sourceTree = "<group>"; };
+		052730BD1ADF44CF00C84F69 /* GWPopupBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWPopupBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				0527309B1ADF446100C84F69 /* AppDelegate.m */,
 				0527309D1ADF446100C84F69 /* ViewController.h */,
 				0527309E1ADF446100C84F69 /* ViewController.m */,
+				052730BC1ADF44CF00C84F69 /* GWPopupBlurView.h */,
+				052730BD1ADF44CF00C84F69 /* GWPopupBlurView.m */,
 				052730A01ADF446100C84F69 /* Main.storyboard */,
 				052730A31ADF446100C84F69 /* Images.xcassets */,
 				052730A51ADF446100C84F69 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				0527309F1ADF446100C84F69 /* ViewController.m in Sources */,
 				0527309C1ADF446100C84F69 /* AppDelegate.m in Sources */,
+				052730BE1ADF44CF00C84F69 /* GWPopupBlurView.m in Sources */,
 				052730991ADF446100C84F69 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

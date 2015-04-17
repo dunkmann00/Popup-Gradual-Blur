@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,10 +15,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E2x-7T-DNK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E2x-7T-DNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1C9-hK-EPO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E2x-7T-DNK" secondAttribute="bottom" id="45n-YS-vtj"/>
+                            <constraint firstItem="E2x-7T-DNK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PSn-9s-qMg"/>
+                            <constraint firstAttribute="trailing" secondItem="E2x-7T-DNK" secondAttribute="trailing" id="uCa-Zf-rHv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="E2x-7T-DNK" id="07W-Og-Z21"/>
+                        <outlet property="noButton" destination="ulN-1u-b7q" id="7Px-TB-paB"/>
+                        <outlet property="panGesture" destination="61u-qH-O0U" id="PeN-7W-N2r"/>
+                        <outlet property="questionLabel" destination="ZFF-oU-FJ7" id="fCf-34-Xlo"/>
+                        <outlet property="tapGesture" destination="H2Q-4M-Y7l" id="bk8-ZM-G6v"/>
+                        <outlet property="yesButton" destination="oih-6X-TaS" id="NXo-sJ-DsR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="61u-qH-O0U">
+                    <connections>
+                        <action selector="panGestureRecognized:" destination="BYZ-38-t0r" id="hxm-2B-TAm"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="H2Q-4M-Y7l">
+                    <connections>
+                        <action selector="tapGestureRecognized:" destination="BYZ-38-t0r" id="NTg-YW-ljk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do You Like This Image?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumScaleFactor="0.10000000000000001" id="ZFF-oU-FJ7">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ulN-1u-b7q">
+                    <rect key="frame" x="0.0" y="0.0" width="51" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <state key="normal" title="No">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jxs-u9-OIg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oih-6X-TaS">
+                    <rect key="frame" x="0.0" y="0.0" width="98" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <state key="normal" title="Yes">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWN-PF-KZn"/>
+                    </connections>
+                </button>
             </objects>
         </scene>
     </scenes>

@@ -151,9 +151,9 @@
         [self.backgroundView setNeedsDisplay];
 }
 
--(void)setFrame:(CGRect)frame
+-(void)setBounds:(CGRect)bounds
 {
-    [super setFrame:frame];
+    [super setBounds:bounds];
     if(_backgroundView)
     {
         _backgroundView.frame = self.bounds;
@@ -171,12 +171,12 @@
         [self refreshBackground];
 }
 
--(void)setBounds:(CGRect)bounds
+-(void)setFrame:(CGRect)frame
 {
-    [super setBounds:bounds];
+    [super setFrame:frame];
     if(_backgroundView)
     {
-        _backgroundView.frame = bounds;
+        _backgroundView.frame = self.bounds;
     }
     if(_contentView)
     {

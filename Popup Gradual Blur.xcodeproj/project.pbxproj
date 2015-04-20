@@ -43,6 +43,7 @@
 		052730B21ADF446100C84F69 /* Popup_Gradual_BlurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Popup_Gradual_BlurTests.m; sourceTree = "<group>"; };
 		052730BC1ADF44CF00C84F69 /* GWPopupBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWPopupBlurView.h; sourceTree = "<group>"; };
 		052730BD1ADF44CF00C84F69 /* GWPopupBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWPopupBlurView.m; sourceTree = "<group>"; };
+		05D49AB71AE57A380011DACB /* GWViewBlurType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWViewBlurType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 				0527309E1ADF446100C84F69 /* ViewController.m */,
 				052730BC1ADF44CF00C84F69 /* GWPopupBlurView.h */,
 				052730BD1ADF44CF00C84F69 /* GWPopupBlurView.m */,
+				05D49AB71AE57A380011DACB /* GWViewBlurType.h */,
 				052730A01ADF446100C84F69 /* Main.storyboard */,
 				052730A31ADF446100C84F69 /* Images.xcassets */,
 				052730A51ADF446100C84F69 /* LaunchScreen.xib */,
@@ -422,6 +424,7 @@
 				052730B81ADF446100C84F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		052730B91ADF446100C84F69 /* Build configuration list for PBXNativeTarget "Popup Gradual BlurTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +433,7 @@
 				052730BB1ADF446100C84F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

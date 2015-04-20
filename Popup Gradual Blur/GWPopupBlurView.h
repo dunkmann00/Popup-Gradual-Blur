@@ -7,24 +7,8 @@
 //
 
 #import <GLKit/GLKit.h>
+#import "GWViewBlurType.h"
 
-/**
- @typedef GWViewBlurType
- 
- @constant GWViewBlurTypeExtraLight Creates a blur effect equivalent to UIBlurEffectStyleExtraLight.
- @constant GWViewBlurTypeLight Creates a blur effect equivalent to UIBlurEffectStyleLight.
- @constant GWViewBlurTypeDark Creates a blur effect equivalent to UIBlurEffectStyleDark.
- 
- @abstract Blur styles available for a GWPopupBlurView.
- */
-typedef NS_ENUM(NSInteger, GWViewBlurType) {
-    /**Creates a blur effect equivalent to UIBlurEffectStyleExtraLight.*/
-    GWViewBlurTypeExtraLight,
-    /**GWViewBlurTypeLight Creates a blur effect equivalent to UIBlurEffectStyleLight.*/
-    GWViewBlurTypeLight,
-    /**GWViewBlurTypeDark Creates a blur effect equivalent to UIBlurEffectStyleDark.*/
-    GWViewBlurTypeDark
-};
 /**
  A GWPopupBlurView object provides a way to add a blur over views that gradually animates onto the screen. It also lets you add views to its contentView so they can be slid onto the GWPopupBlurView in coordination with the blur using a spring animation.
  

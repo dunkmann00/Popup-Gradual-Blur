@@ -16,7 +16,7 @@
  @constant GWViewBlurTypeLight Creates a blur effect equivalent to UIBlurEffectStyleLight.
  @constant GWViewBlurTypeDark Creates a blur effect equivalent to UIBlurEffectStyleDark.
  
- @abstract Blur styles available for a GWGradualBlurView.
+ @abstract Blur styles available for a GWGradualBlurView or GWPopupBlurView.
  */
 typedef NS_ENUM(NSInteger, GWViewBlurType) {
     /**Creates a blur effect equivalent to UIBlurEffectStyleExtraLight.*/

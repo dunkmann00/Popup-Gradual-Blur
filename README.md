@@ -1,7 +1,7 @@
 # Popup-Gradual-Blur
 
 <img src="/Popup Gradual Blur/ScreenCapture.gif" align="right">
-Gradually blur background content and have views popup over view.
+Gradually animate the blurring of background content and have views popup over the blur.
 
 A GWPopupBlurView object provides a way to add a blur over views that gradually animates onto the screen. It also lets you add views to its contentView so they can be slid onto the GWPopupBlurView in coordination with the blur using a spring animation.
  
